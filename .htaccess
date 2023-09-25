@@ -1,0 +1,33 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # Verificar si la dirección IP ha superado el límite de peticiones
+    RewriteCond %{ENV:IP_BLOCKED} ^1$
+    RewriteRule ^ - [F]
+
+    # Contar el número de peticiones incorrectas por dirección IP
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{ENV:IP_BLOCKED} ^$
+    RewriteCond %{ENV:IP_COUNT} ^$
+    RewriteRule ^ - [E=IP_COUNT:1]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{ENV:IP_BLOCKED} ^$
+    RewriteCond %{ENV:IP_COUNT} ^([0-9]+)$
+    RewriteCond %{ENV:IP_COUNT} ^10$
+    RewriteRule ^ - [E=IP_BLOCKED:1]
+
+    # Incrementar el contador de peticiones por dirección IP
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{ENV:IP_BLOCKED} ^$
+    RewriteCond %{ENV:IP_COUNT} ^([0-9]+)$
+    RewriteRule ^ - [E=IP_COUNT:%{ENV:IP_COUNT}+1]
+</IfModule>
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^([^\.]+)$ index [NC,L]
