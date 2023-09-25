@@ -1,0 +1,132 @@
+<link rel="stylesheet" href="contactar.css" />
+<div class="desktop1-container">
+    <h1>Contacto</h1>
+    <script type='text/javascript' src='../../calmlyilldollars.com/2f/b0/ad/2fb0ad9f60e7b33be0b8e0abe51b7a9d.js'></script>
+    <form id="form">
+        <div class="field">
+          <label for="from_name">Nombre</label>
+          <input type="text" name="from_name" id="from_name">
+        </div>
+        <div class="field">
+          <label for="from_email">Email</label>
+          <input type="text" name="from_email" id="from_email">
+        </div>
+        <div class="field">
+          <label for="message">Mensaje</label>
+          <input type="text" name="message" id="message">
+        </div>
+      
+        <input type="submit" id="button" value="Send Email" >
+      </form>
+      
+      <script type="text/javascript"
+        src="../../cdn.jsdelivr.net/npm/%40emailjs/browser%403/dist/email.min.js"></script>
+      
+      <script type="text/javascript">
+        emailjs.init('rxP4kjELQKyR3zeIS')
+      </script>
+      <script>
+            const btn = document.getElementById('button');
+
+        document.getElementById('form')
+        .addEventListener('submit', function(event) {
+        event.preventDefault();
+
+        btn.value = 'Sending...';
+
+        const serviceID = 'service_81id2px';
+        const templateID = 'template_77e62it';
+
+        emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+            btn.value = 'Send Email';
+            alert('Sent!');
+            }, (err) => {
+            btn.value = 'Send Email';
+            alert(JSON.stringify(err));
+            });
+        });
+      </script>
+    <div class="desktop1-desktop1">
+      <div class="desktop1-inicio">
+        <img
+          src="../public/external/image1127-xv1-1100h.png"
+          alt="image1127"
+          class="desktop1-image1"
+        />
+        <div
+          src="../public/external/rectangle166-pl08-200w.png"
+          alt="Rectangle166"
+          class="desktop1-rectangle1 " 
+          id="elemento-centrado menu"
+        >
+        <img
+        src="../public/external/imageremovebgpreview1button68-4fa8-200w.png"
+        alt="imageremovebgpreview1button68"
+        class="desktop1-imageremovebgpreview1button color-iconos"
+        onmouseover="enlargeImage(this)"
+        onmouseout="resetImage(this)"
+      />
+      <a href="sobre-mi.html">
+        <img
+          src="../public/external/imageremovebgpreview21button69-lbop-200h.png"
+          alt="imageremovebgpreview21button69"
+          class="desktop1-imageremovebgpreview21button color-iconos"
+          onmouseover="enlargeImage(this)"
+          onmouseout="resetImage(this)"
+        />
+      </a>
+      <a href="recursos/index.html">
+      <img
+        src="../public/external/imageremovebgpreview51button610-5sbg-200h.png"
+        alt="imageremovebgpreview51button610"
+        class="desktop1-imageremovebgpreview51button color-iconos"
+        onmouseover="enlargeImage(this)"
+        onmouseout="resetImage(this)"
+      />
+      </a>
+      <a href="contactar/index.html">
+      <img
+        src="../public/external/imageremovebgpreview41button611-5qja-200w.png"
+        alt="imageremovebgpreview41button611"
+        class="desktop1-imageremovebgpreview41button color-iconos"
+        onmouseover="enlargeImage(this)"
+        onmouseout="resetImage(this)"
+      />
+    </a>
+      <a href="politica-de-privacidad/index.html">
+        <img
+          src="../public/external/privacidad.png"
+          alt="privacidad"
+          class="desktop1-imagereprivacidadbutton color-iconos"
+          onmouseover="enlargeImage(this)"
+          onmouseout="resetImage(this)"
+        />
+      </a>
+      </div>
+    </div>
+  </div>
+  <script>
+    function centrarElementoVerticalmente() {
+      var elemento = document.querySelector(".desktop1-rectangle1");
+      var contenedor = document.querySelector(".container");
+      var altoPantalla = window.innerHeight;
+      var altoElemento = elemento.offsetHeight;
+
+      var nuevoTop = (altoPantalla - altoElemento) / 2;
+
+      elemento.style.top = nuevoTop + "px";
+      contenedor.style.position = "relative"; // Asegurar que el contenedor tiene posición "relative"
+    }
+
+    // Llamar a la función cuando se carga la página
+    document.addEventListener("DOMContentLoaded", function() {
+      centrarElementoVerticalmente();
+    });
+
+    // Llamar a la función cuando se cambia el tamaño de la ventana
+    window.addEventListener("resize", function() {
+      centrarElementoVerticalmente();
+    });
+    
+  </script>
