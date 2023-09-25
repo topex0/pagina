@@ -1,0 +1,674 @@
+
+
+/*PANTALLA GRANDE*/
+/*PANTALLA GRANDE*/
+/*PANTALLA GRANDE*/
+/*PANTALLA GRANDE*/
+
+
+@media (min-width: 1501px)  {
+  .desktop1-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .desktop1-desktop1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(55, 53, 53, 1);
+  } 
+  .desktop1-inicio {
+    top: 0px;
+    left: -4px;
+    width: 1444px;
+    height: 1024px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .desktop1-image1 {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+  }
+  .desktop1-rectangle1 {
+    top: 145px;
+    left: 8px;
+    width: 98px;
+    height: 450px;
+    position: fixed;
+    border-radius: 58px;
+    animation: slideFromLeft 1s ease-in-out;
+    background: #1a1a1a91;
+    border-radius: 20px !important;
+    box-shadow: 0 0 160px rgb(0 31 255 / 38%);
+    z-index: 100;
+  }
+  .color-iconos {
+    filter: brightness(100);
+  }
+
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%); /* Inicia fuera de la pantalla hacia la izquierda */
+    }
+    100% {
+      transform: translateX(0); /* Se desplaza hacia la posición original */
+    }
+  }
+
+
+  .desktop1-barralateral-menu {
+    top: 160px;
+    left: -200px; /* Posición inicial fuera de la pantalla */
+    width: 98.36065673828125px;
+    height: 468px;
+    display: flex;
+    position: fixed;
+    align-items: flex-start;
+    flex-shrink: 1;
+    transition: left 1.5s ease; /* Transición de 0.5 segundos */
+    z-index: 10;
+    
+  }
+
+  .animate-slide {
+    left: 8px; /* Posición final */
+  }
+
+  .desktop1-iconos-button {
+    top: 0px;
+    left: 0px;
+    width: 98.36065673828125px;
+    height: 377px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    z-index: 11;
+  }
+  .desktop1-imageremovebgpreview1button {
+    top: 50px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview21button {
+    top: 130px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview51button {
+    top: 210px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview41button {
+    top: 290px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imagereprivacidadbutton {
+    top: 370px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-vector1 {
+    top: 532px;
+    left: 1134.9998779296875px;
+    width: 274px;
+    height: 1px;
+    position: absolute;
+  }
+  .desktop1-text {
+    top: 348px;
+    left: 1350px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 128px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Baloo;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop1-imageremovebgpreview61 {
+    top: 313px;
+    left: 380px;
+    width: 400px;
+    height: 442px;
+    position: absolute;
+    z-index: 1;
+    position: absolute;
+    transition: transform 0.2s ease; /* Agregamos una transición suave para suavizar el movimiento */
+  }
+}
+
+
+
+/*PC*/
+/*PC*/
+/*PC*/
+/*PC*/
+
+
+@media (min-width: 1024px) and (max-width: 1500px) {
+  .desktop1-container {
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .desktop1-desktop1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(55, 53, 53, 1);
+  } 
+  .desktop1-inicio {
+    top: 0px;
+    left: -4px;
+    width: 1444px;
+    height: 1024px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .desktop1-image1 {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+  }
+  .desktop1-rectangle1 {
+    top: 145px;
+    left: 8px;
+    width: 98px;
+    height: 450px;
+    position: fixed;
+    border-radius: 58px;
+    animation: slideFromLeft 1s ease-in-out;
+    background: #1a1a1a91;
+    border-radius: 20px !important;
+    box-shadow: 0 0 160px rgb(0 31 255 / 38%);
+    z-index: 100;
+  }
+  .color-iconos {
+    filter: brightness(100);
+  }
+
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%); /* Inicia fuera de la pantalla hacia la izquierda */
+    }
+    100% {
+      transform: translateX(0); /* Se desplaza hacia la posición original */
+    }
+  }
+
+
+  .desktop1-barralateral-menu {
+    top: 160px;
+    left: -200px; /* Posición inicial fuera de la pantalla */
+    width: 98.36065673828125px;
+    height: 468px;
+    display: flex;
+    position: fixed;
+    align-items: flex-start;
+    flex-shrink: 1;
+    transition: left 1.5s ease; /* Transición de 0.5 segundos */
+    z-index: 10;
+    
+  }
+
+  .animate-slide {
+    left: 8px; /* Posición final */
+  }
+
+  .desktop1-iconos-button {
+    top: 0px;
+    left: 0px;
+    width: 98.36065673828125px;
+    height: 377px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    z-index: 11;
+  }
+  .desktop1-imageremovebgpreview1button {
+    top: 50px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview21button {
+    top: 130px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview51button {
+    top: 210px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview41button {
+    top: 290px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imagereprivacidadbutton {
+    top: 370px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-vector1 {
+    top: 532px;
+    left: 1134.9998779296875px;
+    width: 274px;
+    height: 1px;
+    position: absolute;
+  }
+  .desktop1-text {
+    top: 348px;
+    left: 1160px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 128px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Baloo;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop1-imageremovebgpreview61 {
+    top: 313px;
+    left: 380px;
+    width: 400px;
+    height: 442px;
+    position: absolute;
+    z-index: 1;
+  }
+}
+
+
+/*TABLET*/
+/*TABLET*/
+/*TABLET*/
+/*TABLET*/
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .desktop1-container {
+    overflow: hidden; /* Oculta la scrollbar */
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .desktop1-desktop1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(55, 53, 53, 1);
+  } 
+  .desktop1-inicio {
+    overflow: hidden;
+    top: 0px;
+    left: -4px;
+    width: 1444px;
+    height: 1024px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .desktop1-image1 {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+  }
+  .desktop1-rectangle1 {
+    overflow: hidden;
+    top: 90px;
+    left: 8px;
+    width: 98px;
+    height: 450px;
+    position: fixed;
+    border-radius: 58px;
+    animation: slideFromLeft 1s ease-in-out;
+    background: #1a1a1a91;
+    border-radius: 20px !important;
+    box-shadow: 0 0 160px rgb(0 31 255 / 38%);
+  }
+  .color-iconos {
+    filter: brightness(100);
+  }
+
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%); /* Inicia fuera de la pantalla hacia la izquierda */
+    }
+    100% {
+      transform: translateX(0); /* Se desplaza hacia la posición original */
+    }
+  }
+
+
+  .desktop1-barralateral-menu {
+    overflow: hidden;
+    top: 160px;
+    left: -200px; /* Posición inicial fuera de la pantalla */
+    width: 98.36065673828125px;
+    height: 468px;
+    display: flex;
+    position: fixed;
+    align-items: flex-start;
+    flex-shrink: 1;
+    transition: left 1.5s ease; /* Transición de 0.5 segundos */
+    z-index: 10;
+    
+  }
+
+  .animate-slide {
+    left: 8px; /* Posición final */
+  }
+
+  .desktop1-iconos-button {
+    overflow: hidden;
+    top: 0px;
+    left: 0px;
+    width: 98.36065673828125px;
+    height: 377px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+    z-index: 11;
+  }
+  .desktop1-imageremovebgpreview1button {
+    overflow: hidden;
+    top: 50px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview21button {
+    overflow: hidden;
+    top: 130px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview51button {
+    overflow: hidden;
+    top: 210px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview41button {
+    overflow: hidden;
+    top: 290px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-imagereprivacidadbutton {
+    top: 370px;
+    left: 30px;
+    width: 43px;
+    height: 43px;
+    position: absolute;
+  }
+  .desktop1-vector1 {
+    overflow: hidden;
+    top: 532px;
+    left: 1134.9998779296875px;
+    width: 274px;
+    height: 1px;
+    position: absolute;
+  }
+  .desktop1-text {
+    overflow: hidden;
+    top: 235px;
+    left: 702px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 128px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Baloo;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop1-imageremovebgpreview61 {
+    overflow: hidden;
+    top: 121px;
+    left: 191px;
+    width: 400px;
+    height: 442px;
+    position: absolute;
+    z-index: 1;
+}
+}
+@media (min-width: 300px) and (max-width: 840px) {
+  .desktop1-container {
+    overflow: hidden; /* Oculta la scrollbar */
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .desktop1-desktop1 {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: flex-start;
+    flex-shrink: 0;
+    background-color: rgba(55, 53, 53, 1);
+  } 
+  .desktop1-inicio {
+    overflow: hidden;
+    top: 0px;
+    left: -4px;
+    width: 1444px;
+    height: 1024px;
+    display: flex;
+    position: absolute;
+    align-items: flex-start;
+    flex-shrink: 1;
+  }
+  .desktop1-image1 {
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    border-color: rgba(0, 0, 0, 1);
+    border-style: solid;
+    border-width: 1px;
+  }
+  .desktop1-rectangle1 {
+    overflow: hidden;
+    left: 8px;
+    width: 70px;
+    height: 274px;
+    position: fixed;
+    border-radius: 58px;
+    animation: slideFromLeft 1s ease-in-out;
+    background: #1a1a1a91;
+    border-radius: 20px !important;
+    box-shadow: 0 0 160px rgb(0 31 255 / 38%);
+  }
+  .color-iconos {
+    filter: brightness(100);
+  }
+
+  @keyframes slideFromLeft {
+    0% {
+      transform: translateX(-100%); /* Inicia fuera de la pantalla hacia la izquierda */
+    }
+    100% {
+      transform: translateX(0); /* Se desplaza hacia la posición original */
+    }
+  }
+
+
+  .desktop1-barralateral-menu {
+    display: none;
+
+    
+  }
+
+  .animate-slide {
+    left: 8px; /* Posición final */
+  }
+
+  .desktop1-iconos-button {
+    display: none;
+  }
+  .desktop1-imageremovebgpreview1button {
+    overflow: hidden;
+    top: 20px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview21button {
+    overflow: hidden;
+    top: 70px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview51button {
+    overflow: hidden;
+    top: 120px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+  }
+  .desktop1-imageremovebgpreview41button {
+    overflow: hidden;
+    top: 170px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+  }
+  .desktop1-imagereprivacidadbutton {
+    top: 220px;
+    left: 25px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+  }
+  .desktop1-vector1 {
+    overflow: hidden;
+    top: 532px;
+    left: 1134.9998779296875px;
+    width: 274px;
+    height: 1px;
+    position: absolute;
+  }
+  .desktop1-text {
+    overflow: hidden;
+    top: 235px;
+    left: 702px;
+    color: rgba(255, 255, 255, 1);
+    height: auto;
+    position: absolute;
+    font-size: 128px;
+    font-style: Regular;
+    text-align: left;
+    font-family: Baloo;
+    font-weight: 400;
+    line-height: normal;
+    font-stretch: normal;
+    text-decoration: none;
+  }
+  .desktop1-imageremovebgpreview61 {
+    display: none;
+}
+}
